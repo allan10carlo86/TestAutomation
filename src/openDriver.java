@@ -11,7 +11,7 @@ public class openDriver {
 	{
 		System.out.println("Before -- Open Webdriver");
 		
-		System.setProperty("webdriver.gecko.driver", "/home/allan/Documents/Mozilla GeckoDriver/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "driver/geckodriver");
 		driver = new FirefoxDriver();
 	}
 

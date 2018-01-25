@@ -25,13 +25,11 @@ public class Dropdown extends openDriver {
 		
 		//Dynamic Dropdowns
 		driver.findElement(By.cssSelector("#ctl00_mainContent_ddl_originStation1_CTXT")).click();
-		driver.findElement(By.xpath("//a[@value='GOI']")).click();
+		driver.findElement(By.linkText("Goa (GOI)")).click();
 		//driver.findElement(By.cssSelector("#ctl00_mainContent_ddl_destinationStation1_CTXT")).click();
 		driver.findElement(By.xpath("(//a[@value='DEL'])[2]")).click();
 		
-		
-		
-		//CHeckbox
+		//CHeckbox 
 		WebElement checkBoxElement = driver.findElement(By.id("ctl00_mainContent_chk_Unmr"));
 		System.out.println(checkBoxElement.isSelected());
 		if(checkBoxElement.isSelected() == false)
