@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -28,11 +29,16 @@ public class Dropdown extends openDriver {
 		//driver.findElement(By.cssSelector("#ctl00_mainContent_ddl_destinationStation1_CTXT")).click();
 		driver.findElement(By.xpath("(//a[@value='DEL'])[2]")).click();
 		
+		
+		
 		//CHeckbox
-		if(driver.findElement(By.id("ctl00_mainContent_chk_Unmr")).isSelected() == false)
+		WebElement checkBoxElement = driver.findElement(By.id("ctl00_mainContent_chk_Unmr"));
+		System.out.println(checkBoxElement.isSelected());
+		if(checkBoxElement.isSelected() == false)
 		{
-			driver.findElement(By.id("ctl00_mainContent_chk_Unmr")).click();
+			checkBoxElement.click();
 		}
+		System.out.println(checkBoxElement.isSelected());
 		//isSelected (want to know if checkbox is selected)
 		
 		
