@@ -13,7 +13,7 @@ public class openDriver {
 	{
 		System.out.println("Before -- Open Webdriver");
 		
-		System.setProperty("webdriver.gecko.driver", "driver/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "driverLinux/geckodriver");
 		driver = new FirefoxDriver();
 		wait = new WebDriverWait(driver,30);
 	}
