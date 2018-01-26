@@ -12,9 +12,17 @@ public class openDriver {
 	public void housekeeping()
 	{
 		System.out.println("Before -- Open Webdriver");
-		
-		System.setProperty("webdriver.gecko.driver", "driverLinux/geckodriver");
-		driver = new FirefoxDriver();
+        String operatingSystem = System.getProperty("os.name");
+        
+        if (operatingSystem.equalsIgnoreCase("linux"))
+        {
+        	System.setProperty("webdriver.gecko.driver", "driverLinux/geckodriver");
+        }
+        else if (operatingSystem.contains("MACmac"))
+        {
+        	System.setProperty("webdriver.gecko.driver", "driver/geckodriver");
+        }
+        driver = new FirefoxDriver();
 		wait = new WebDriverWait(driver,30);
 	}
 
