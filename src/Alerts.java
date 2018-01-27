@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+/* This is file Alerts.java */
 
 public class Alerts extends openDriver{
 	@Before
