@@ -8,8 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import junit.framework.Assert;
-
 public class MedicalCity extends openDriver{
 	@Before
 	public void before()
