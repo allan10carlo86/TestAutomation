@@ -22,7 +22,7 @@ public class Miscelleanous extends openDriver{
 		Random rand = new Random();
 		
 		int n = rand.nextInt(9999999) + 1;
-		String email = "allan.carlo.t.ramos" + Integer.toString(n) + "@gmail.com";
+		String email = "alggbde" + Integer.toString(n) + "@gmail.com";
 		driver.findElement(By.id("m_rtxtEmail1")).sendKeys(email);
 		driver.findElement(By.id("m_rtxtPassword")).sendKeys("H3110W0r1d");
 		
@@ -53,7 +53,9 @@ public class Miscelleanous extends openDriver{
 		driver.findElement(By.id("registerClick")).click();	
 		Thread.sleep(5000);
 		
-		driver.findElement(By.cssSelector("a.redBtn.close")).click();
+		//driver.findElement(By.cssSelector("a.redBtn.close")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'close')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'close')]")).click();
 	}
 	@Test
 	public void test2() throws InterruptedException
