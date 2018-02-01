@@ -1,12 +1,15 @@
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 import java.util.Random;
 public class Miscelleanous extends openDriver{
 	
@@ -56,7 +59,17 @@ public class Miscelleanous extends openDriver{
 		//driver.findElement(By.cssSelector("a.redBtn.close")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'close')]")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'close')]")).click();
+		
+		List<WebElement> addPlayers = driver.findElements(By.className("plusIcon"));
+		System.out.println(addPlayers.size());
+		
+		for(int i=0; i<6; i++)
+		{
+			addPlayers.get(i).click();
+			Thread.sleep(3000);
+		}
 	}
+	
 	@Test
 	public void test2() throws InterruptedException
 	{
@@ -96,7 +109,10 @@ public class Miscelleanous extends openDriver{
 		assertEquals(getErrorMessage,"Sorry! That email is already registered");
 	}
 	
-	
+	@After
+	public void after() {
+		driver.quit();
+	}
 	
 
 }
