@@ -3,6 +3,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import junit.framework.Assert;
+
 public class TableGrid extends openDriver{
 	@Before
 	public void before()
@@ -28,15 +30,22 @@ public class TableGrid extends openDriver{
 			
 			String extras = driver.findElement(By.xpath("//div[text()='Extras']/following-sibling::div")).getText();
 			System.out.println("Extras: " + extras);
-			sum += Integer.parseInt(extras);
+			int actualTotal  = sum + Integer.parseInt(extras);
 			String total = driver.findElement(By.xpath("//div[text()='Total']/following-sibling::div")).getText();
 			System.out.println("Total: " + total);
-			int intTotal = Integer.parseInt(total);
+			int expectedTotal = Integer.parseInt(total);
 			
-			if(intTotal == sum)
+			if(expectedTotal == actualTotal)
 			{
-				System.out.println("intTotal of " +intTotal +" is equal to sum " + sum );
+				System.out.println("expectedTotal of " +expectedTotal +" is equal to actualTotal " + actualTotal );
 			}
+			else 
+			{
+				System.out.println("expectedTotal of " + expectedTotal +" is NOT equal to actualTotal " + actualTotal );
+			}
+			
+			
+			Assert.assertEquals(actualTotal, expectedTotal);
 			
 		} catch(Exception e)
 		{
