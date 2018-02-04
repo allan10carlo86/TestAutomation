@@ -13,5 +13,10 @@
 	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/selenium-java-3.8.1/libs/guava-23.0.jar"/>
 	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/selenium-java-3.8.1/libs/httpclient-4.5.3.jar"/>
 	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/selenium-java-3.8.1/libs/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/allancarloramos/Documents/01 Programming/03 Selenium/Selenium Codes/TestAutomation/commons-io-2.6/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
