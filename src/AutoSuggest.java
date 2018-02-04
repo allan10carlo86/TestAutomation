@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+/* 
+ * Using Webdriverwait and Actions class 
+ */
 public class AutoSuggest extends openDriver {
 	@Before
 	public void before()
