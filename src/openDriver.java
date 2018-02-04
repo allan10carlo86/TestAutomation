@@ -23,7 +23,7 @@ public class openDriver {
         	System.setProperty("webdriver.gecko.driver", "driver/geckodriver");
         }
         driver = new FirefoxDriver();
-		wait = new WebDriverWait(driver,30);
+		wait = new WebDriverWait(driver,5);
 	}
 
 }
