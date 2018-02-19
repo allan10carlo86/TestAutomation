@@ -63,10 +63,10 @@ public class SimpleEx extends openDriver{
 		
 	}
 	
-	@After
+	/*@After
 	public void after()
 	{
 		driver.quit();
 	}
-	
+	*/
 }
