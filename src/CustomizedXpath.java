@@ -49,10 +49,17 @@ public class CustomizedXpath extends openDriver{
 		WebElement submitButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.g-button.g-button-submit")));		
 		submitButton.click();	
 	}
+	
 	@After
 	public void after()
 	{
 		driver.quit();
 	}
 	
+	@Test
+	public void test2() 
+	{
+		driver.get("http://www.google.com");
+			
+	}
 }
