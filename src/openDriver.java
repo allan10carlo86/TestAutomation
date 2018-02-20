@@ -23,10 +23,13 @@ public class openDriver {
         {
         	System.setProperty("webdriver.gecko.driver", "driver/geckodriver");
         }
-        else if (operatingSystem.contains("windows"))
+        else if (operatingSystem.contains("Windows"))
         {
         	System.setProperty("webdriver.gecko.driver", "driverFirefoxWindows/geckodriver.exe");
         }
+        
+        System.out.println(operatingSystem.toString());
+        
         driver = new FirefoxDriver();
 		wait = new WebDriverWait(driver,5);
 	}

@@ -1,5 +1,6 @@
 import java.util.Random;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -46,10 +47,12 @@ public class CustomizedXpath extends openDriver{
 		agreeButton.click();
 				
 		WebElement submitButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.g-button.g-button-submit")));		
-		submitButton.click();
-		
-		
-		
+		submitButton.click();	
+	}
+	@After
+	public void after()
+	{
+		driver.quit();
 	}
 	
 }
